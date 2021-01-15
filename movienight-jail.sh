@@ -206,8 +206,6 @@ iocage exec "${JAIL_NAME}" cp ${INCLUDE_JAIL}/movienight /usr/local/etc/rc.d/
 iocage exec "${JAIL_NAME}" chmod +x /usr/local/etc/rc.d/movienight
 iocage exec "${JAIL_NAME}" sysrc movienight_enable=YES
 
-iocage restart "${JAIL_NAME}"
-
 # Don't need /mnt/includes any more, so unmount it
 iocage fstab -r "${JAIL_NAME}" "${INCLUDES_PATH}" ${INCLUDE_JAIL} nullfs rw 0 0
 iocage exec "${JAIL_NAME}" rmdir ${INCLUDE_JAIL}

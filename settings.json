@@ -1,0 +1,31 @@
+
+	"servicerestart":"service movienight restart",
+	"serviceget": "/usr/local/bin/quasselget",
+	"serviceset": "/usr/local/bin/quasselset",
+        "options": {
+            "AdminPassword": {
+                "type": "string",
+                "name": "AdminPassword",
+                "description": "Administrator Password generated during plugin install",
+                "readonly": true
+            },
+            "ListenAddress": {
+                "type": "string",
+                "name": "ListenAddress",
+                "description": "host:port of the MovieNight (default ':8089')",
+                "readonly": true
+            },
+            "StreamKey": {
+                "type": "string",
+                "name": "Database Password",
+                "description": "Stream key, to protect your stream",
+                "readonly": true
+            },
+            "RtmpListenAddress": {
+                "type": "string",
+                "name": "RtmpListenAddress",
+                "description": "host:port of the MovieNight (default ':8089')",
+                "readonly": true
+            }
+        }
+    }
